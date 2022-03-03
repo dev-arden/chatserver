@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- FAQ SQL Mapper -->
+<mapper namespace="com.websocket.chat.mapper.ChatMapper">
+	<resultMap type = "ChatRoom" id = "ChatRoom">
+		<result column="roomId" property="roomId" />
+		<result column="name" property="name" />
+	</resultMap> 
+	
+    <select id="findAllRoom" resultMap="ChatRoom">
+        SELECT * FROM Chat
+    </select>
+    
+    <select id="findRoomById" resultMap="ChatRoom" parameterType="map">
+    	SELECT 
+    		*
+    	FROM
+    		Chat
+    	WHERE
+    		roomId = #{roomId}
+    </select>
+    
+    <select id="findRoomOwnerById" resultMap="ChatRoom" parameterType="map">
+    	SELECT
+    		*
+    	FROM
+    		Chat
+    	WHERE
+    		roomId = #{roomId}
+    	AND
+    		ownerId = #{ownerId}
+    </select>
+    
+    
+    <insert id="createRoom" parameterType="map">
+	    INSERT Chat (roomId, name, ownerId) VALUES (#{roomId}, #{name}, #{ownerId})
+	</insert>
+	
+	<select id="findOwner" resultType="String" parameterType="map">
+    	SELECT 
+    		ownerId
+    	FROM
+    		Chat
+    	WHERE
+    		roomId = #{roomId}
+    </select>
+    
+    <insert id="createRoomAuth" parameterType="map">
+    	INSERT CHAT_USER (roomId, userId, auth) VALUES (#{roomId}, #{userId}, 1)
+    </insert>
+	
+	<!--  
+	<insert id="createRoom" parameterType="map">
+		INSERT Chat (roomId, name) VALUES (#{roomId}, #{name})
+	    <selectKey keyColumn="name" keyProperty="name" order="AFTER" resultType="String">
+	    	SELECT
+	    		name
+	    	FROM
+	    		Chat
+	    	WHERE
+	    		roomId = #{roomId}
+	    	AND name = #{name}
+	    </selectKey>
+	</insert>
+	-->
+</mapper>
