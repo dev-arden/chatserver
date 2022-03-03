@@ -6,19 +6,23 @@
 > Vue.js + HTML
 
 ## chat and private-message Protocols
-> Websocket
+> STOMP(Websocket)
+- why I use the STOMP?
+> make a channel from Server to Client 
+
+> Using HTTP, it is impossible to send from Server to Client
 
 ## login, join, create room, enter room Protocols
 > Rest API
 
 ## flow
-- request scenario
+> request scenario
 ![1](images/requestscenario.png)
-- accept scenario (accept)
+> accept scenario (accept)
 ![1](images/acceptscenario.png)
-- accept scenario (deny)
+> accept scenario (deny)
 ![1](images/acceptscenario2.png)
-- enter scenario 
+> enter scenario 
 ![1](images/enterscenario.png)
 
 
@@ -60,5 +64,11 @@
 - [create room simulation](images/createroom.mov)
 
 
-
-
+## Need to improve
+1. error handling based on Http status code
+2. join column - add creationDate, modifyDate, quitDate field for record
+3. package structure for domain (divide chat, account)
+- com.websocket.chat.account.controller
+- com.websocket.chat.chatroom.controller
+5. In mapper, parameter is not delivered @Param, but VO(model)
+6. either REST API or STOMP API, API name must be clear(api name is exposed)
