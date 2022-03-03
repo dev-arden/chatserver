@@ -13,8 +13,8 @@
 
 ## flow
 - request scenario
-- 
 ![1](images/requestscenario.PNG)
+<img src="images/requestscenario.PNG" width="40%" height="30%" alt="RubberDuck"></img>
 - accept scenario (accept)
 ![1](images/acceptscenario.PNG)
 - accept scenario (deny)
