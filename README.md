@@ -14,13 +14,13 @@
 ## flow
 - request scenario
 - 
-![1](images/request scenario.PNG)
+![1](images/requestscenario.PNG)
 - accept scenario (accept)
-![1](images/accept scenario.PNG)
+![1](images/acceptscenario.PNG)
 - accept scenario (deny)
-![1](images/accept scenario2.PNG)
+![1](images/acceptscenario2.PNG)
 - enter scenario 
-![1](images/enter scenario.PNG)
+![1](images/enterscenario.PNG)
 
 
 ## Screen capture
@@ -31,7 +31,7 @@
 ![1](images/login.PNG)
 
 ## chatroom list
-![1](images/chatroom list1.PNG)
+![1](images/chatroomlist1.PNG)
 
 ### request (when accepted)
 ![1](images/request.PNG)
@@ -40,9 +40,9 @@
 ![1](images/request4.PNG)
 
 ### request (when denied)
-![1](images/req no permission.PNG)
-![1](images/req no permission2.PNG)
-![1](images/req no permission3.PNG)
+![1](images/reqnopermission.PNG)
+![1](images/reqnopermission2.PNG)
+![1](images/reqnopermission3.PNG)
 
 ### request simulation
 ![1](images/requestvideo.mov)
@@ -55,7 +55,7 @@
 ![1](images/chat2.PNG)
 
 ### chat simulation
-
+![1](images/chatvideo.mov)
 
 ### create room simulation
 ![1](images/createroom.mov)
