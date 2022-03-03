@@ -13,7 +13,7 @@
 
 ## flow
 - request scenario
-![1](images/requestscenario.PNG)
+![1](images/requestscenario.png)
 - accept scenario (accept)
 ![1](images/acceptscenario.PNG)
 - accept scenario (deny)
