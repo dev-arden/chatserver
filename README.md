@@ -29,7 +29,7 @@
 ### login
 ![1](images/login.PNG)
 
-## chatroom list
+### chatroom list
 ![1](images/chatroomlist1.PNG)
 
 ### request (when accepted)
@@ -47,17 +47,17 @@
 - [request simulation](images/requestvideo.mov)
 
 ### accept simulation
-![1](images/acceptvideo.mov)
+- [accept simulation](images/acceptvideo.mov)
 
 ### chat
 ![1](images/chat.PNG)
 ![1](images/chat2.PNG)
 
 ### chat simulation
-![1](images/chatvideo.mov)
+- [chat simulation](images/chatvideo.mov)
 
 ### create room simulation
-![1](images/createroom.mov)
+- [create room simulation](images/createroom.mov)
 
 
 
